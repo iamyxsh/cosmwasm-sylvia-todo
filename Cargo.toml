@@ -1,0 +1,21 @@
+[package]
+name = "cosmwasm-sylvia-todo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cosmwasm-std = { version = "1.3.1", features = ["staking"] }
+sylvia = "0.9.3"
+schemars = "0.8.12"
+cosmwasm-schema = "1.3.1"
+serde = "1.0.180"
+cw-storage-plus = "1.1.0"
+thiserror = "1.0.44"
+
+[dev-dependencies]
+sylvia = {  version = "0.9.3", features = ["mt"]}
